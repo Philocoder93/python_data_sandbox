@@ -12,7 +12,11 @@ def sel_vec(vec, index):
     try:
         return vec[index]
     except:
-        print("no value at that index")
+        return 0
+
+def len_vec(vec):
+    keys = vec.keys()
+    return abs(max(keys) - min(keys) + 1)
 
 def mut_vec(vec, index, val):
     vec[index] = val
@@ -28,3 +32,5 @@ def sub_vec:
 def mul_vec:
 
 def div_vec:
+
+
